@@ -1,18 +1,15 @@
-Here’s a clean and friendly `README.md` for your KoalaCards project that highlights its purpose, features, and how to get started:
-
-````markdown
 # 🐨 KoalaCards
 
 **KoalaCards** is a simple yet charming flashcard app built in Python for helping you study smarter! Inspired by the cuteness of koalas and the power of spaced repetition, KoalaCards lets users create, shuffle, and review their own flashcards.
 
-![Koala Mascot](A_digital_illustration_of_an_anthropomorphic_koala.png)
+![koala_mascot.png]
 
 ## ✨ Features
 
 - Add custom flashcards with front and back text
 - Shuffle flashcards for randomized review
 - Simple terminal-based interface
-- Option to save and load your flashcards (coming soon!)
+- Repeat flashcards you get wrong
 
 ## 📦 Requirements
 
@@ -24,9 +21,9 @@ Here’s a clean and friendly `README.md` for your KoalaCards project that highl
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/KoalaCards.git
+   git clone https://github.com/mdinaya/KoalaCards.git
    cd KoalaCards
-````
+   ````
 
 2. Run the app:
 
@@ -38,7 +35,7 @@ Here’s a clean and friendly `README.md` for your KoalaCards project that highl
 
 * Save/load flashcards from a file
 * Tag flashcards by topic
-* GUI version using Tkinter or PyQt
+* GUI version using Tkinter
 * Spaced repetition algorithm
 
 ## 🤓 Project Structure
@@ -47,8 +44,8 @@ Here’s a clean and friendly `README.md` for your KoalaCards project that highl
 KoalaCards/
 ├── koalacards.py        # Main application logic
 ├── flashcards.json      # (Optional) Saved flashcard data
-├── README.md
-└── A_digital_illustration_of_an_anthropomorphic_koala.png
+├── README.md            # This file you're reading
+└── koala_mascot.png     # Image of Koala Mascot
 ```
 
 ## 💡 Inspiration
@@ -61,7 +58,7 @@ MIT License – free for personal and educational use.
 
 ---
 
-Made with 💛 by \[Your Name]
+Made with 💛 by \[mdinaya]
 
 ```
 Let me know if you want to add [file saving](f), [GUI interface](f), or [spaced repetition logic](f) to the next version.
