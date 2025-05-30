@@ -2,7 +2,7 @@
 
 **KoalaCards** is a simple yet charming flashcard app built in Python for helping you study smarter! Inspired by the cuteness of koalas and the power of spaced repetition, KoalaCards lets users create, shuffle, and review their own flashcards.
 
-![koala_mascot.png]
+![Koala Mascot](koala_mascot.png)
 
 ## ✨ Features
 
@@ -33,7 +33,6 @@
 
 ## 🛠 Planned Features
 
-* Save/load flashcards from a file
 * Tag flashcards by topic
 * GUI version using Tkinter
 * Spaced repetition algorithm
@@ -50,7 +49,7 @@ KoalaCards/
 
 ## 💡 Inspiration
 
-Created as part of the Code in Place course. KoalaCards aims to combine simplicity and cuteness to make learning more enjoyable.
+Created as a final project for the Code in Place course. KoalaCards aims to combine simplicity and cuteness to make learning more enjoyable.
 
 ## 📜 License
 
@@ -58,7 +57,4 @@ MIT License – free for personal and educational use.
 
 ---
 
-Made with 💛 by @[mdinaya]
-
-
-Let me know if you want to add [file saving](f), [GUI interface](f), or [spaced repetition logic](f) to the next version.
+Made with 💗 by [me](https://github.com/mdinaya).
