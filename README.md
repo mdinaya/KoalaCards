@@ -28,7 +28,7 @@
 2. Run the app:
 
    ```bash
-   python koalacards.py
+   python main.py
    ```
 
 ## 🛠 Planned Features
@@ -42,10 +42,10 @@
 
 ```
 KoalaCards/
-├── koalacards.py        # Main application logic
+├── main.py              # Main application logic
 ├── flashcards.json      # (Optional) Saved flashcard data
 ├── README.md            # This file you're reading
-└── koala_mascot.png     # Image of Koala Mascot
+└── koala_mascot.png     # Image of the Koala Mascot
 ```
 
 ## 💡 Inspiration
@@ -58,8 +58,7 @@ MIT License – free for personal and educational use.
 
 ---
 
-Made with 💛 by \[mdinaya]
+Made with 💛 by @[mdinaya]
 
-```
+
 Let me know if you want to add [file saving](f), [GUI interface](f), or [spaced repetition logic](f) to the next version.
-```
