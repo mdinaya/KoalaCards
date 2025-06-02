@@ -12,6 +12,7 @@
 - Repeat flashcards you get wrong
 
 Now the interface in console looks like this:
+
 ![Interface](main.PNG)
 
 ## 📦 Requirements
