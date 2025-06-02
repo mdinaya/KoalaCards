@@ -11,6 +11,9 @@
 - Simple terminal-based interface
 - Repeat flashcards you get wrong
 
+Now the interface in console looks like this:
+![Interface](main.PNG)
+
 ## 📦 Requirements
 
 - Python 3.6+
@@ -44,6 +47,7 @@ KoalaCards/
 ├── main.py              # Main application logic
 ├── flashcards.json      # (Optional) Saved flashcard data
 ├── README.md            # This file you're reading
+├── main.png             # Image of the main interface
 └── koala_mascot.png     # Image of the Koala Mascot
 ```
 
