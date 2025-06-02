@@ -15,45 +15,50 @@ def main():
         print("3. Exit")
 
         # get user's choice
-        choice = int(input("Choose an option above! (1, 2, 3): "))
-
-        # Start practice
-        if choice == 1:
-            flashcards = load_flashcards(FILENAME)
-            # check if there are any flashcards
-            if flashcards:
-                wrong_cards = run_flashcards(flashcards)
-                # ask a user whether to shuffle cards
-                shuffle_input = input("Shuffle cards? (y/n): ").lower()
-                # if a user says 'y' shuffle cards
-                if shuffle_input == "y":
-                    random.shuffle(flashcards)
-                while wrong_cards:
-                    retry_input = input("\nRetry cards with incorrect answer? (y/n): ").lower()
-                    if retry_input == 'y':
-                        wrong_cards = run_flashcards(wrong_cards)
-                    else:
-                        break
+        try:
+            choice = int(input("Choose an option above! (1, 2, 3): "))
+            # Start practice
+            if choice == 1:
+                flashcards = load_flashcards(FILENAME)
+                # check if there are any flashcards
+                if flashcards:
+                    # ask a user whether to shuffle cards
+                    shuffle_input = input("Shuffle cards? (y/n): ").lower()
+                    # if a user says 'y' shuffle cards
+                    if shuffle_input == "y":
+                        random.shuffle(flashcards)
+                    wrong_cards = run_flashcards(flashcards)
+                    while wrong_cards:
+                        retry_input = input("\nRetry cards with incorrect answer? (y/n): ").lower()
+                        if retry_input == 'y':
+                            wrong_cards = run_flashcards(wrong_cards)
+                        else:
+                            break
+                else:
+                    print("------------------------------------")
+                    print("No flashcards found! Add some first.")
+                    print("------------------------------------")
+            # run add_flashcards function
+            elif choice == 2:
+                add_flashcards(FILENAME)
+            # quit
+            elif choice == 3:
+                print('--------------------')
+                print("Thanks for playing!")
+                print("Goodbye!")
+                print('--------------------')
+                break
+            # any other number that is not in (1, 2, 3)
             else:
-                print("------------------------------------")
-                print("No flashcards found! Add some first.")
-                print("------------------------------------")
-        # run add_flashcards function
-        elif choice == 2:
-            add_flashcards(FILENAME)
-        # quit
-        elif choice == 3:
-            print('--------------------')
-            print("Thanks for playing!")
-            print("Goodbye!")
-            print('--------------------')
-            break
-        # any other number that is not in (1, 2, 3)
-        else:
-            print("--------------------------")
-            print("Invalid choice! Try again.")
-            print("--------------------------")
+                print("--------------------------")
+                print("Invalid choice! Try again.")
+                print("--------------------------")
+        except:
+            print("------------------------------------------------")
+            print("Incorrect input. Choose only between 1, 2 and 3.")
+            print("------------------------------------------------")
 
+        
 
 # create a csv file
 def initial_file(filename):
@@ -80,7 +85,7 @@ def load_flashcards(filename):
 
 # function to let user create their own cards
 def add_flashcards(filename):
-    print("\nAdd new flashcards (type 'q' to quit at any time)")
+    print("\nAdd new flashcards (type 'q' to quit at any time)\n")
     # open the csv file in the append mode
     with open(filename, mode="a", newline="") as csvfile:
         fieldnames = ["front", "back"]
@@ -107,8 +112,7 @@ def run_flashcards(flashcards):
     # set score and wrong answers arrays
     score = 0
     wrong_cards = []
-    # welcome message
-    print("Welcome to Flippy FLashy!")
+
     # loop over flashcards
     for i, c in enumerate(flashcards, 1):
         print(f"\nCard {i}/{len(flashcards)}")
